@@ -1,0 +1,122 @@
+#myModal.modal{
+  opacity: 1;
+}
+#myModal .modal-dialog {
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+.modal.fade .modal-dialog {
+  -webkit-transition: -webkit-transform .3s ease-out;
+  -o-transition: -o-transform .3s ease-out;
+  transition: transform .3s ease-out;
+  -webkit-transform: translate(0, 75%);
+  -ms-transform: translate(0, 75%);
+  -o-transform: translate(0, 75%);
+  transform: translate(0, 75%);
+}
+
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 40%);
+  -ms-transform: translate(0, 40%);
+  -o-transform: translate(0, 40%);
+  transform: translate(0, 40%);
+}
+
+#myModal .modal-dialog .modal-content {
+  margin: 0;
+  border: none;
+  padding: 20px 66px 40px;
+  height: 100%;
+  border-radius: 4px;
+  background: white;
+}
+
+#myModal .modal-body {
+  padding: 0;
+}
+
+#myModal.fade .background-box {
+  height: 365px;
+  background-color: #5c6ac4;
+  position: absolute;
+  top: -365px;
+  left: 0;
+  width: 100%;
+  transition: top 0.3s ease-in-out;
+  z-index: -1;
+  text-align: center;
+}
+
+#myModal.fade.in .background-box {
+  top: 0;
+}
+
+#myModal label.error {
+  top: 56px;
+  font-size: 12px;
+  color: #d50000 !important;
+  transform: none !important;
+}
+
+#myModal .background-box .modal-main-title {
+  margin-top: 40px;
+}
+
+.form-message-box .modal-main-title{
+  margin-top: 0;
+}
+.form-message-box .modal-main-info{
+  margin-bottom: 30px;
+}
+.form-message-box .btn-custom.btn-mdl {
+    padding: 14px 33px 13px;
+}
+.modal-main-title {
+  line-height: 49px;
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 42px;
+}
+
+.modal-main-info {
+  font-size: 16px;
+  color: #ffffff;
+  max-width: 460px;
+  margin: 20px auto 0;
+  line-height: normal;
+}
+
+#myModal .buttons-box {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  #myModal .modal-dialog {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  #myModal .background-box .modal-main-info {
+    margin: 20px auto 40px;
+    font-size: 14px;
+    padding: 0 20px;
+  }
+  #myModal .background-box .modal-main-title {
+    margin-top: 60px;
+    font-size: 32px;
+  }
+  #myModal .background-box {
+    height: auto;
+  }
+  #myModal .modal-dialog .modal-content {
+    border-radius: 0;
+    padding: 20px 26px 40px;
+  }
+  input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea, .input-field label {
+    font-size: 14px;
+  }
+  #myModal .buttons-box {
+    text-align: center;
+  }
+}

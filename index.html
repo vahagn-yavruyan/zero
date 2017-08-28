@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=9">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>zero</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="canvas/canvas.css">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="stylesheet" type="text/css" href="styles/modal.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="styles/material.css">
+  <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
+</head>
+
+<body class="">
+  <div class="form-message-box success">
+    <div class="success-wrapper">
+      <h1 class="modal-main-title">Thank you!</h1>
+      <p class="modal-main-info">You are very important to us, all information received will always remain confidential. We will contact you as soon as we review your message.</p>
+      <button type="button" class="btn-custom btn-revert btn-mdl" data-close="message">Ok, Got it</button>
+    </div>
+  </div>
+  <div class="form-message-box error">
+    <div class="error-wrapper">
+      <h1>Ups</h1>
+      <button type="button" class="btn-custom btn-transparent btn-mdl" data-close="message">Ok</button>
+    </div>
+  </div>
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="background-box">
+      <h1 class="modal-main-title">Request Zero</h1>
+      <p class="modal-main-info">
+        If you want to get Zero for your organization, please let us know by filling the form below. We’ll get in touch with you.
+      </p>
+    </div>
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <form action="" name="registration" id='regForm'>
+
+            <div class="input-field">
+              <input id="first_last_name" type="text" name='first_last_name'>
+              <label for="first_last_name">First and Last name</label>
+            </div>
+            <div class="input-field">
+              <input id="email" type="email" name='email'>
+              <label for="email">Corporate email</label>
+            </div>
+            <div class="input-field">
+              <input id="company_name" type="text" name='company_name'>
+              <label for="company_name">Company Name</label>
+            </div>
+            <div class="input-field">
+              <input id="position" type="text" name='position'>
+              <label for="position">Your corporate position</label>
+            </div>
+            <div class="input-field">
+              <input id="count" type="number" name='count'>
+              <label for="count">How many people are in your organization?</label>
+            </div>
+            <div class="input-field">
+              <input id="comments" type="text" name='comments'>
+              <label for="comments">Anything you want to ask us (optional)</label>
+            </div>
+            <div class="buttons-box">
+              <button type="submit" class="btn-custom btn-viol btn-mdl">Request Zero</button>
+              <button type="button" class="btn-custom btn-transparent btn-mdl" data-dismiss="modal">Cancel</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper-box">
+    <div class="canvas-wrapper">
+      <canvas id="stars" width="300" height="300"></canvas>
+    </div>
+    <header class="header-section">
+      <div class="section-wrapper">
+        <div class="logo-box">
+          <img src="images/img-logo-main.png" alt="">
+        </div>
+        <button type="button" class="btn-custom btn-blue btn-mdl" data-toggle="modal" data-target="#myModal">Request zero</button>
+        <div class="clearfix"></div>
+      </div>
+    </header>
+    <section class="info-section">
+      <p class="info-head">
+        Productivity. Revenue. Security.
+      </p>
+      <div class="container-box">
+        <div class="inner-box">
+          <div class="left-box">
+            <h1 class="info-main-title">A.I. powered email for a modern attorney</h1>
+            <p class="info-text">Zero app is designed to increase email productivity and recover more billable hours.</p>
+            <button type="button" class="btn-custom btn-blue btn-mdl" data-toggle="modal" data-target="#myModal">Request zero</button>
+          </div>
+          <div class="right-box">
+            <img class='hero-image' src="images/img-hero.svg" alt="">
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <section class="productivity-section">
+      <div class="section-shadow">
+        <canvas class='triangleCanvas reversed' width="5120" height="1440"></canvas>
+        <div class="inner-box">
+          <div class="left-box  desktop-image">
+            <img class='circles-image' src="images/img-productivity-background.png" alt="">
+            <img class='scrolling-box hero-image' src="images/img-productivity-hero.png" alt="">
+          </div>
+          <div class="right-box">
+            <h1 class="info-title">Productivity</h1>
+            <p class="info-text">Zero uses state of the art A.I. technologies to make attorneys more productive and provide custom e-mail usage experience for the users of the organization.</p>
+            <ul class="list-wrapper">
+              <li>
+                <img class="icon" src="images/ic-predictive-email-fil.svg" alt="">
+                <p>Predictive email filing
+                </p>
+              </li>
+              <li>
+                <img class="icon" src="images/ic-requests-and-dates.svg" alt="">
+                <p>Requests and activity tracking</p>
+              </li>
+              <li>
+                <img class="icon" src="images/ic-sorting-email.svg" alt="">
+                <p>Sorting email by importance</p>
+              </li>
+              <li>
+                <img class="icon" src="images/ic-dms-integration.svg" alt="">
+                <p>DMS integration</p>
+              </li>
+            </ul>
+            <div class="mobile-box">
+              <img class='circles-image' src="images/img-productivity-background.png" alt="">
+              <img class='hero-image mobile-image' src="images/img-productivity-hero.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="block-section">
+      <div class="inner-box">
+        <div class="left-box">
+          <h1 class="info-title">Revenue</h1>
+          <p class="info-text tall-box">Zero automatically tracks time spent on mobile email and provides daily reports with logged activity or exports the data into the billing system.</p>
+        </div>
+        <div class="right-box">
+          <img class='revenue-image' src="images/img_revenue_background.png" alt="">
+          <img class='scrolling-box revenue-hero-image slower-scroll' src="images/img-revenue-hero.png" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="security-section section-shadow">
+      <canvas class='triangleCanvas' width="5120" height="1440"></canvas>
+      <div class="inner-box">
+        <div class="left-box desktop-image">
+          <img class='image-security' src="images/img_security_background.png" alt="">
+          <img class='scrolling-box security-hero-image slower-scroll' src="images/img-hero-background.png" alt="">
+        </div>
+        <div class="right-box">
+          <h1 class="info-title">Security</h1>
+          <p class="info-text">We know that security is your first priority, that is why Zero is using unique machine learning algorithms that run directly on the end-user’s device, never sending email data for processing or storage to third-party servers. Zero communicates directly with your email server and does not require any changes to your technology infrastructure.</p>
+          <ul class="list-wrapper">
+            <li>
+              <img class="icon" src="images/ic-proprietary-ai.svg" alt="">
+              <p>Proprietary A.I. tech that runs without a cloud component</p>
+            </li>
+            <li>
+              <img class="icon" src="images/ic-no-changes.svg" alt="">
+              <p>Requires no changes to the existing technology infrastructure</p>
+            </li>
+            <li>
+              <img class="icon" src="images/ic-smart-check.svg" alt="">
+              <p>“Smart check” prevents sending emails to the wrong recipients and checks incoming emails for phishing attacks</p>
+            </li>
+          </ul>
+          <div class="mobile-box">
+            <img class='image-security' src="images/img_security_background.png" alt="">
+            <img class='security-hero-image mobile-image' src="images/img-hero-background.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="request-section">
+      <h1 class="info-main-title">Request zero now</h1>
+      <p class="info-text">Zero app is designed to increase email productivity and recover more billable hours</p>
+      <button type="button" class="btn-custom btn-blue btn-lrg" data-toggle="modal" data-target="#myModal">Request zero</button>
+    </section>
+    <footer>
+      <div class="inner-box">
+
+        <p class='copy-text'>
+          Copyright 2017 &copy; Zeroapp Inc. All right reserved.
+        </p>
+        <p class="crafted">
+
+        </p>
+      </div>
+    </footer>
+  </div>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="js/classie.js"></script>
+<script src="js/main.js"></script>
+<script src="canvas/delaunay.js"></script>
+<script src="canvas/canvas.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+</html>
